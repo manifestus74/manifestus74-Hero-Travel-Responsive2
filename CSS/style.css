@@ -256,11 +256,14 @@ select {
     color: #131318;
     width: 38vw;
     line-height: 1.7;
-    margin-bottom: 35px;
+    /*margin-bottom: 2.5vw;*/
+    padding: 0 50px;
 }
 
 .content-section1-left {
-    height: 35vw;
+    height: 38vw;
+    align-items: flex-end;
+    position: relative;
 }
 .content-section1-left ul {
     width: 34vw;
@@ -274,13 +277,11 @@ select {
 
 .content-section1-right img {
     object-fit: cover;
-    height: 38vw;
+    /*max-height: 38vw;*/
 }
 
 .section1-btn {
-   
     display: flex;
-    align-items: flex-end;
     padding: 16px 25px;
     justify-content: center;
     width: 154px; 
@@ -289,6 +290,7 @@ select {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
+    
     
 }
 
@@ -511,7 +513,7 @@ select {
 }
 
 .images-row1-section3 { 
-    height: 19vw;
+    
     display: flex;
     gap: 26px;
     margin-bottom: 26px;
@@ -519,7 +521,7 @@ select {
 }
 
 .images-row2-section3 {
-    height: 18vw;
+    
     margin: auto;
     display: flex;
     width: 50%;
@@ -531,14 +533,14 @@ select {
     background-color: rgba(251, 181, 99, 0.1);
     border: 1px solid rgba(251, 181, 99, 0.2);
     border-radius: 16px;
-    padding: 20px 30px 40px 30px;
+    padding: 0px 30px 0px 30px;
 }
 
 .Service {
     background-color: rgba(41, 206, 246, 0.1);
     border: 1px solid rgba(41, 206, 246, 0.2);
     border-radius: 16px;
-    padding:  20px 30px 40px 30px;
+    padding:  0px 30px 0px 30px;
 }
 
 .Price {
@@ -546,11 +548,12 @@ select {
     background-color: rgba(233, 68, 68, 0.1);
     border: 1px solid rgba(233, 68, 68, 0.2);
     border-radius: 16px;
-    padding:  20px 30px 40px 30px;
+    padding:  0px 30px 0px 30px;
 }
 
+
 .container-backgrounds img {
-    margin-top: 12px;
+    margin-top: 25px;
 }
 
 .container-backgrounds h2 {
@@ -737,7 +740,7 @@ select {
 }
 
 .content-section5-right {
-height: 100%;
+height: 35vw;
 }
 
 .section5-btn {
@@ -748,7 +751,7 @@ height: 100%;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 /* ********* section 6 ********* */
@@ -813,10 +816,12 @@ input::placeholder {
     background-image: url(../Resources/Images/PhotoSave70.png);
     background-repeat: no-repeat;
     display: flex;
-    width: 672px;
+    width: 820px;
+    height: 422px;
     border-radius: 16px; 
     justify-content: flex-end;
     align-items: flex-end;
+    margin: auto;
 }
 
 /********** F O O T E R **********/
@@ -837,6 +842,7 @@ footer {
 .footer-logo-image {
     margin-top: 100px;
     display: flex;
+    margin-bottom: -20px;
 }
 .logo-text h1 {
     margin: 0;
@@ -870,6 +876,316 @@ p.footer {
     margin-bottom: 100px;
 }
 
-.footer-icons p {
-    padding: 100px 1000px 100px 0px;
+
+@media screen and (max-width: 1425px) {
+    .navFlex {
+        display: block;
+        font-size: 30px;
+        margin-top: 5px;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .container-content-section1 {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 50px;
+    }
+
+    .content-section1-left {
+        text-align: center;
+        margin: auto;
+    }
+
+    .content-section1-left ul {
+        margin: auto;
+    }
+
+    .section1-btn {
+        margin: auto;
+    }
+
+    .content-section1-right {
+        margin-top: 150px;
+    }
+
+    .containers3-text-box {
+        margin-bottom: 0px;
+    }
+
+    .container-content-section5 {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+    }
+
+    .container-content-section5 h1 {
+        padding: 0;
+    }
+
+    .container-content-section5 p {
+        padding: 0;
+    }
+
+    .content-section5-left ul {
+        margin: auto;
+        line-height: normal;
+    }
+
+    .section5-btn {
+        margin-top: 25px;
+    }
+
+    .content-section5-right {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .content-section5-right img {
+        
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    
+    .images-row1-section3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Hotels {
+        width: 35vw;
+        margin: auto;
+    }
+
+    .Service {
+        width: 35vw;
+        margin: auto;
+    }
+    
+    .container-content-section6 {
+        flex-direction: column;
+    }
+
+    .content-section6-left {
+        width: 50%;
+        margin: auto;
+    }
+
+    .content-section6-right {
+         margin: auto;
+         background-position: center;
+         border-radius: 16px;
+    }
+
+    .content-section6-right img {
+        padding-right: 70px;
+   }
+
+    .content-section1-right {
+    margin-top: 15vw;
+}
+
+}
+
+@media screen and (max-width: 1150px) 
+{
+    
+    .content-section1-right {
+        padding-top: 50px;
+    }
+
+    .images-row1 {
+       flex-direction: column;
+       row-gap: 20px;
+    }
+
+    .images-row2 {
+        flex-direction: column;row-gap: 20px;
+    }
+        
+    .images-row3 {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .Maldives {
+        margin: auto;
+    }
+
+    .Indonesia {
+        margin: auto;
+    }
+
+    .Srilanka {
+        margin: auto;
+        
+
+    }
+
+    .North-America {
+        margin: auto;
+    }
+
+    .Kashmir {
+        margin: auto;
+    }
+
+    .Bangladesh {
+        margin: auto;
+    }
+
+    .Bandarban {
+        margin: auto;
+    }
+
+    .images-row2 img {
+        width: 460px;
+        height: 260px;
+    }
+    
+    .images-row3 img {
+        width: 460px;
+        height: 260px;
+        
+    }
+    
+    .images-row1 img {
+        width: 460px;
+        height: 260px;
+    }
+
+    .centered-Maldives {
+        position: absolute;
+        top: 48%;
+        left: 40%;
+        }
+    
+    .centered-Indonesia {
+        position: absolute;
+        top: 46%;
+        left: 40%;
+    }
+    
+    .centered-Srilanka {
+        position: absolute;
+        top: 44%;
+        left: 41%;
+    }
+    
+    .centered-NorthAmerica {
+        position: absolute;
+        top: 45%;
+        left: 33%;
+    }
+    
+    .centered-Kashmir {
+        position: absolute;
+        top: 44%;
+        left: 39%;
+    }
+    
+    .centered-Bangladesh {
+        position: absolute;
+        top: 45%;
+        left: 38%;
+    }
+    
+    .centered-Bandarban {
+        position: absolute;
+        top: 45%;
+        left: 38%;
+}
+
+    .section1-btn {
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+}
+
+@media screen and (max-width: 1150px) 
+{
+    .header-content-input {
+
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        height: 280px;
+    }
+    form {
+
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        padding: 5px 0px 0px 0px;
+    }
+
+    .header-content h1 {
+
+        padding: 30px 0px 10px 0px;
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+
+    .header-content p {
+        margin-bottom: 10px; 
+    }
+
+    .header-shadow-input {
+        max-width: 287px;
+        margin: auto;
+        padding: 20px 0px 40px 0px;
+
+    }
+
+    .header-content-input form {
+        max-width: 287px;  
+        margin-bottom: 0px;
+    }
+
+    .header-content p {
+        padding: 0px 150px;
+    }
+
+    input[type="text"] {
+        height: 50px;
+        width: 285px;
+    }
+
+    form .Whenselection {
+        width: 285px;
+    }
+
+    form select {
+        width: 285px; 
+    }
+
+    form .Typeselection {
+        width: 285px; 
+    }
+    form .text {
+        width: 285px;
+    }
+    .search-input {
+        width: 285px;
+        
+    }
+
+    .header-content {
+        object-fit: cover;
+    }
+
+    .container-content-section5 {
+        padding-bottom: 50px;
+    }
+
+    .container-content-section6 {
+        padding-bottom: 50px;
+        
+    }
+
 }
